@@ -1,13 +1,14 @@
-import MenuBar from '../../components/MenuBar';
+import ContactCard from '../../components/ContactCard';
 
 export default function Contact() {
   return (
-    <><MenuBar />
-      <main className="flex flex-col items-center justify-center min-h-screen bg-yellow-50">
-        <h1 className="text-4xl font-bold text-purple-600">Contact Page</h1>
-        <p className="mt-4 text-lg text-gray-700">โปรดติดต่อเรา099-555-2558</p>
-      </main>
-    </>
+    <div className="wrapper p-[16px] flex flex-col gap-[6px]">
+      <h1>Contact</h1>
+      <ContactCard name="Bell" description="Yeah" imageUrl="https://avatar.iran.liara.run/public"/>
+      <ContactCard name="Bob" description="Yeah" imageUrl="https://avatar.iran.liara.run/public"/>
+      <ContactCard name="kevin" description="Yeah" imageUrl="https://avatar.iran.liara.run/public"/>
+      <ContactCard name="minion" description="Yeah" imageUrl="https://avatar.iran.liara.run/public"/>
+    </div>
   );
 }
 
